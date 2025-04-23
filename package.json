@@ -1,0 +1,52 @@
+{
+  "name": "dev-code",
+  "version": "1.0.0",
+  "description": "Automated software development",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "development",
+    "automation",
+    "project-management",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emreboun/dev-code.git"
+  },
+  "author": "balsnub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emreboun/dev-code/issues"
+  },
+  "homepage": "https://github.com/emreboun/dev-code#readme",
+  "dependencies": {
+    "dependency-cruiser": "^16.10.1",
+    "express": "^4.18.2",
+    "ts-morph": "^25.0.1",
+    "typescript": "^5.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/uuid": "^9.0.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
